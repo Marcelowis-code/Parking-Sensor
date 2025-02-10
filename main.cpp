@@ -14,12 +14,14 @@
 #include <FastLED.h>
 
 #define POT_PIN A0  // Potentiometer connected to A0
-
 #define LED_PIN     14
 #define NUM_LEDS    16
 #define BRIGHTNESS  255
 #define LED_TYPE    WS2812
 #define COLOR_ORDER GRB
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+#define SOUND_SPEED 0.034
 
 CRGB leds[NUM_LEDS];
 int numLedsOn = 0;
@@ -28,16 +30,12 @@ int numLedsOn = 0;
 int ctrl = 0; 
 int potValue = 0;
 
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 64 // OLED display height, in pixels
-
 // OLED display
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // Ultrasonic sensor
 const int trigPin = 2;
 const int echoPin = 16;
-#define SOUND_SPEED 0.034
 
 long duration;
 int distanceCm;

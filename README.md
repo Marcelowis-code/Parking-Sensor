@@ -1,2 +1,4 @@
 Parking sensor using **ESP8266**, Circle LED **WS2812**, OLED **SSD1315** monitor, 10K Potenciometer and **HC-SR04**
-![image](https://github.com/user-attachments/assets/f38d79ff-fd2a-4e84-bca3-082b38a3643d)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6844819a-aa2f-4e40-847f-91399fb72b14">
+</p>
